@@ -13,7 +13,7 @@
 <body>
     <div class="container">
         <h1 class="title">Студенты</h1>
-        <form action="" class="form">
+        <form class="form" id="createStudentForm">
             <div class="form_col">
 
                 <div class="form_field">
@@ -31,8 +31,8 @@
             </div>
             <div class="form_col">
                 <div class="form_field">
-                    <label for="dateOfBirth">Дата рождения</label>
-                    <input type="date" id="dateOfBirth" name="dateOfBirth">
+                    <label for="birthDate">Дата рождения</label>
+                    <input type="date" id="birthDate" name="birthDate">
                 </div>
                 <div class="form_field">
                     <label for="startYear">Год начала обучения</label>
@@ -40,11 +40,11 @@
                 </div>
                 <div class="form_field">
                     <label for="faculty">Факультет</label>
-                    <select name="" id="faculty">
-                        <option value="">Фронтенд базовый курс</option>
-                        <option value="">Фронтенд React</option>
-                        <option value="">Бэкэнд на Python</option>
-                        <option value="">Бэкэнд на PHP</option>
+                    <select name="faculty" id="faculty">
+                        <option value="frontBase">Фронтенд базовый курс</option>
+                        <option value="frontReact">Фронтенд React</option>
+                        <option value="backPy">Бэкэнд на Python</option>
+                        <option value="backPHP">Бэкэнд на PHP</option>
                     </select>
                 </div>
             </div>

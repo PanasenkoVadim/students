@@ -1,4 +1,4 @@
-const students = [
+export const students = [
     {
         surname: "Иванов",
         name: "Иван",
@@ -24,21 +24,18 @@ const students = [
         faculty: "Фронтенд"
     },
 ]
-
-
-
-
 const createTableRow = (obj) => {
     return `<tr>
     <td>${obj.surname} ${obj.name} ${obj.lastname}</td>
+    <td>${obj.faculty}</td>
     <td>${obj.date}</td>
     <td>${obj.startYear}</td>
-    <td>${obj.faculty}</td>
 </tr>`
 }
 
 export const createTable = () => {
     const tbody = document.getElementById("tbody")
+    tbody.innerHTML = ""
     students.forEach(student => {
         tbody.innerHTML += createTableRow(student)
     })

@@ -1,0 +1,27 @@
+{
+  "extends": ["@vanillaforums/eslint-config", "eslint:recommended", "prettier"],
+  "plugins": ["prettier"],
+  "parser": "@babel/eslint-parser",
+  "parserOptions": {
+    "ecmaVersion": 8,
+    "requireConfigFile": false
+  },
+  "rules": {
+    "prettier/prettier": [
+      "error",
+      {
+        "endOfLine": "lf"
+      }
+    ],
+    "func-names": "off",
+    "camelcase": [
+      "error",
+      {
+        "ignoreDestructuring": true,
+        "ignoreImports": true
+      }
+    ],
+    "consistent-return": "off",
+    "no-console": ["error", { "allow": ["warn", "error"] }]
+  }
+}
