@@ -5,11 +5,69 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/main.css">
+    <script defer src="./js/main.js"></script>
     <title>Document</title>
 </head>
 
 <body>
+    <div class="container">
+        <h1 class="title">Студенты</h1>
+        <form action="" class="form">
+            <div class="form_col">
 
+                <div class="form_field">
+                    <label for="surname">Фамилия</label>
+                    <input type="text" id="surname" name="surname">
+                </div>
+                <div class="form_field">
+                    <label for="name">Имя</label>
+                    <input type="text" id="name" name="name">
+                </div>
+                <div class="form_field">
+                    <label for="lastname">Отчество</label>
+                    <input type="text" id="lastname" name="lastname">
+                </div>
+            </div>
+            <div class="form_col">
+                <div class="form_field">
+                    <label for="dateOfBirth">Дата рождения</label>
+                    <input type="date" id="dateOfBirth" name="dateOfBirth">
+                </div>
+                <div class="form_field">
+                    <label for="startYear">Год начала обучения</label>
+                    <input type="text" id="startYear" name="startYear">
+                </div>
+                <div class="form_field">
+                    <label for="faculty">Факультет</label>
+                    <select name="" id="faculty">
+                        <option value="">Фронтенд базовый курс</option>
+                        <option value="">Фронтенд React</option>
+                        <option value="">Бэкэнд на Python</option>
+                        <option value="">Бэкэнд на PHP</option>
+                    </select>
+                </div>
+            </div>
+
+            <div class="form_field">
+                <input type="submit" value="Добавить">
+            </div>
+        </form>
+        <table>
+            <caption>Таблица со студентами с фильтрами и сортировкой</caption>
+            <thead>
+                <tr>
+                    <th>ФИО</th>
+                    <th>Факультет</th>
+                    <th>Дата рождения(возраст)</th>
+                    <th>Годы обучения и номер курса</th>
+                </tr>
+            </thead>
+            <tbody id="tbody">
+            </tbody>
+        </table>
+
+    </div>
 </body>
 
 </html>

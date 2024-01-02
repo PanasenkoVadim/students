@@ -1,0 +1,27 @@
+$grid-breakpoints: (
+    xs: 480px,
+    sm: 768px,
+    md: 1024px,
+    lg: 1366px,
+    xl: 1920px) !default;
+
+$white: #fff;
+$black: #000;
+$mainGreen: #006d68;
+$lightOrange: #ffd2bf;
+$accentOrange: #ff8753;
+$mainOrange: #fd7940;
+$mainGrey: #819ab5;
+$lightGrey: #c3dfde;
+$glassWhite: rgba(255, 255, 255, 0.5
+);
+$accentLightGrey: #e9f3f3;
+$accentLightBlue: #85c0bd;
+$accentBlue: #67b6b3;
+$accentAqua: #caf6f4;
+$accentGrey: #8a8a8a;
+
+$gradientAAE6E3: linear-gradient(315deg, #8ae2de 0%, rgba(217, 217, 217, 0) 100%);
+$cardGradient: linear-gradient(319deg, #aae6e3 0%, rgba(170, 230, 227, 0) 100%);
+$gradientFE: linear-gradient(135deg, #ffefde 0%, rgba(255, 239, 222, 0) 100%);
+$boxShadow: 0 26px 87px -23px #8be2de;
