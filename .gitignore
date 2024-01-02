@@ -1,0 +1,23 @@
+# common
+.htaccess
+.htsecure
+
+# webpack / node / yarn
+/node_modules/
+/dist/
+/web.config
+
+# front
+robots.txt
+package-lock.json
+
+# hosting
+/files/
+/webstat/
+
+# ide
+/.idea
+/.vscode
+
+#logs
+yarn-error.log
