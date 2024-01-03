@@ -26,8 +26,16 @@ td,
 th,
 caption {
     /* делаем отступ в ячейках, выставляем выравнивание текста */
-    padding: 10px 40px;
+    padding: 10px;
     text-align: center;
+}
+
+th button {
+    transform: translateY(5px);
+
+    &.sorted {
+        transform: rotate(180deg);
+    }
 }
 
 caption {
@@ -46,7 +54,7 @@ tbody tr:nth-child(odd) {
 }
 
 table {
-    margin: 0 auto;
+    margin: 0 auto 60px;
     width: 100%;
 
 }

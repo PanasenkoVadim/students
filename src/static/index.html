@@ -41,10 +41,10 @@
                 <div class="form_field">
                     <label for="faculty">Факультет</label>
                     <select name="faculty" id="faculty">
-                        <option value="frontBase">Фронтенд базовый курс</option>
-                        <option value="frontReact">Фронтенд React</option>
-                        <option value="backPy">Бэкэнд на Python</option>
-                        <option value="backPHP">Бэкэнд на PHP</option>
+                        <option value="Фронтенд базовый курс">Фронтенд базовый курс</option>
+                        <option value="Фронтенд React">Фронтенд React</option>
+                        <option value="Бэкэнд на Python">Бэкэнд на Python</option>
+                        <option value="Бэкэнд на PHP">Бэкэнд на PHP</option>
                     </select>
                 </div>
             </div>
@@ -57,10 +57,22 @@
             <caption>Таблица со студентами с фильтрами и сортировкой</caption>
             <thead>
                 <tr>
-                    <th>ФИО</th>
+                    <th>ФИО <button id="sortByName"><svg
+                                class="header-bottom__arrow-svg header-bottom__arrow-svg_holiday" width="24" height="24"
+                                viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M16.594 8.578L18 9.984L12 15.984L6 9.984L7.406 8.578L12 13.172L16.594 8.578Z"
+                                    fill="#000"></path>
+                            </svg></button></th>
                     <th>Факультет</th>
                     <th>Дата рождения(возраст)</th>
-                    <th>Годы обучения и номер курса</th>
+                    <th>Годы обучения и номер курса<button id="sortByStartYear"><svg
+                                class="header-bottom__arrow-svg header-bottom__arrow-svg_holiday" width="24" height="24"
+                                viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M16.594 8.578L18 9.984L12 15.984L6 9.984L7.406 8.578L12 13.172L16.594 8.578Z"
+                                    fill="#000"></path>
+                            </svg></button>
+                    </th>
+                    <th></th>
                 </tr>
             </thead>
             <tbody id="tbody">
